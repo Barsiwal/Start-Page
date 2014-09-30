@@ -1,0 +1,19 @@
+@import '_normalize.scss';
+@import '_grid.scss';
+.logo{
+	position: relative;
+	svg{
+		position: absolute;
+		width:500px;
+		top:0;
+		left:30%;
+		
+
+	}
+}
+.logo svg:hover{
+	fill:#f23154;
+}
+body{
+	background-color: pink;
+}
