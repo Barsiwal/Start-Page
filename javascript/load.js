@@ -2,16 +2,17 @@ $("document").ready(function () {
 	var loader = document.querySelector('.circle');
 	var logo = document.querySelector('.logo');
 	var header = document.getElementsByTagName('header');
-	
-	
-	
+
+
+	$('.container').addClass('start');
 	var length = loader.getTotalLength();
-	loader.style.transition = loader.style.WebkitTransition =
-		'none';
 	loader.style.strokeDasharray = length + ' ' + length;
 	loader.style.strokeDashoffset = length;
-	loader.getBoundingClientRect();
-	loader.style.transition = loader.style.WebkitTransition =
-		'stroke-dashoffset 4s cubic-bezier(.17,.67,.87,.17)';
-	loader.style.strokeDashoffset = '0';
+
+	$('.circle').one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
+		function (e) {
+			$('.container').removeClass('start');
+			$('.container').addClass('end');
+
+		});
 });
