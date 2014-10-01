@@ -12,6 +12,6 @@ $("document").ready(function () {
 	loader.style.strokeDashoffset = length;
 	loader.getBoundingClientRect();
 	loader.style.transition = loader.style.WebkitTransition =
-		'stroke-dashoffset 4s ease-in-out';
+		'stroke-dashoffset 4s cubic-bezier(.17,.67,.87,.17)';
 	loader.style.strokeDashoffset = '0';
 });

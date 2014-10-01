@@ -1914,29 +1914,30 @@ header {
 
 .logo {
   position: absolute;
-  transform: translate3d(0, 30%, 0);
+  transform: translate3d(0, 77%, 0);
   width: 100%; }
   .logo svg {
     width: 25%;
     display: block;
     margin: 0 auto;
-    fill: #4194ff; }
+    fill: #fd357a; }
 
 .load {
   width: 100%;
   position: absolute;
-  bottom: 25%; }
+  bottom: 45%; }
   .load svg {
     display: block;
     margin: 0 auto;
     fill: none;
-    width: 80px; }
+    width: 80px;
+    transform: scale(8); }
     .load svg .circlebg {
       stroke: #ccc;
-      stroke-width: 3; }
+      stroke-width: 1; }
     .load svg .circle {
-      stroke: #0062da;
-      stroke-width: 3; }
+      stroke: #e30251;
+      stroke-width: 1; }
 
 section {
   display: none; }
