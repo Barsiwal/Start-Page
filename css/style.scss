@@ -1,19 +1,73 @@
 @import '_normalize.scss';
 @import '_grid.scss';
+$blue:#4194ff;
+$blue2:darken(#4194ff,20%);
+ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color:black;
+}
+///////////////////////////////////////////////////////////////////////////////////////
+header{
+	height:100%;
+	width:100%;
+	position: fixed;
+	background-color: #f1f1f1;
+}
 .logo{
-	position: relative;
+	position: absolute;
+	transform: translate3d(0,30%,0);
+	width: 100%;
 	svg{
-		position: absolute;
-		width:500px;
-		top:0;
-		left:30%;
-		
-
+		width: 25%;
+		display: block;
+		margin: 0 auto;
+		fill:$blue;
 	}
 }
-.logo svg:hover{
-	fill:#f23154;
+.load{
+	width: 100%;
+	position: absolute;
+	bottom: 25%;
+	svg{
+		display: block;
+		margin: 0 auto;
+		fill:none;
+		width: 80px;
+		.circlebg{
+			stroke:#ccc;
+			stroke-width:3;
+		}
+		.circle{
+			stroke:$blue2;
+			stroke-width:3;
+		}
+			
+	}
 }
-body{
-	background-color: pink;
+//////////////////////////////////////////////////////////////////////////////////////
+section{
+	display: none;
+}
+nav{
+	width: 100%;
+	 .main-nav{
+		display: flex;
+		width:60%;
+		border: 1px solid yellow;
+		li{
+			width:33.333333333333333%;
+			border: 1px solid red;
+			a{
+				border: 1px solid blue;
+				display: block;
+				padding:10px;
+				text-align: center;
+			}
+		}
+	}
 }
