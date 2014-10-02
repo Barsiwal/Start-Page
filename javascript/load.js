@@ -13,13 +13,16 @@ $("document").ready(function () {
 		function (e) {
 			$('.container').removeClass('start');
 			$('.container').addClass('end');
-		setInterval(function(){
-			window.removeEventListener('scroll', noscroll);
-	},1500);
+			setInterval(function () {
+				window.removeEventListener('scroll', noscroll);
+				$('.container').addClass('hideload');
+			}, 1500);
 
 		});
 
 	function noscroll() {
 		window.scrollTo(0, 0);
 	}
+
+
 });

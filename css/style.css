@@ -3391,7 +3391,7 @@ header {
   width: 25%;
   display: block;
   margin: 0 auto;
-  fill: #fd357a;
+  fill: #fa5d87;
 }
 
 /* line 36, _start-animation.scss */
@@ -3413,7 +3413,7 @@ header {
 }
 /* line 50, _start-animation.scss */
 .load svg .circle {
-  stroke: #e30250;
+  stroke: #f81350;
   stroke-width: 1;
 }
 
@@ -3426,7 +3426,7 @@ header {
 
 /* line 63, _start-animation.scss */
 .start .load svg {
-  animation: load-start-expand .5s ease 1.1s both;
+  animation: load-start-expand .7s ease 1.1s both;
 }
 
 @keyframes animInitialHeader {
@@ -3472,7 +3472,7 @@ header {
 }
 /* line 99, _start-animation.scss */
 .end .load svg .circlebg {
-  stroke: #e30250;
+  stroke: #f81350;
 }
 
 /* line 104, _start-animation.scss */
@@ -3530,108 +3530,240 @@ header {
   padding-top: 300px;
 }
 
-/* line 8, style.scss */
-.inner-container {
-  background-color: #fd357a;
+/* line 145, _start-animation.scss */
+.hideload .load {
+  display: none;
 }
 
-/* line 15, style.scss */
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?xr24l3");
+  src: url("../fonts/icomoon.eot?#iefixxr24l3") format("embedded-opentype"), url("../fonts/icomoon.woff?xr24l3") format("woff"), url("../fonts/icomoon.ttf?xr24l3") format("truetype"), url("../fonts/icomoon.svg?xr24l3#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 12, _icon.scss */
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+}
+
+/* line 24, _icon.scss */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 29, _icon.scss */
+.icon-pencil:before {
+  content: "\e600";
+}
+
+/* line 32, _icon.scss */
+.icon-phone:before {
+  content: "\e601";
+}
+
+/* line 35, _icon.scss */
+.icon-envelope:before {
+  content: "\e602";
+}
+
+/* line 38, _icon.scss */
+.icon-user:before {
+  content: "\e603";
+}
+
+/* line 41, _icon.scss */
+.icon-photo:before {
+  content: "\e604";
+}
+
+/* line 44, _icon.scss */
+.icon-megaphone:before {
+  content: "\e605";
+}
+
+/* line 9, style.scss */
+.inner-container {
+  background: #fa5d87;
+  background-size: cover;
+}
+
+/* line 13, style.scss */
+section {
+  background-color: rgba(255, 255, 255, 0.88);
+  border-radius: 10px;
+}
+
+/* line 17, style.scss */
+nav {
+  background-color: rgba(255, 255, 255, 0.88);
+}
+/* line 20, style.scss */
 nav .main-nav {
   margin: 0 auto;
+  display: flex;
   width: 60%;
 }
-/* line 19, style.scss */
+/* line 25, style.scss */
+nav .main-nav li:first-child {
+  position: relative;
+}
+/* line 29, style.scss */
 nav .main-nav li {
   width: 33.3333333333%;
   padding: 0;
 }
-/* line 22, style.scss */
+/* line 32, style.scss */
+nav .main-nav li div {
+  transition: all .3s ease-out;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  bottom: 0;
+  background-color: #06b889;
+}
+/* line 40, style.scss */
 nav .main-nav li a {
+  cursor: pointer;
+  font-family: 'Open Sans Condensed', sans-serif;
   display: block;
-  padding: 10px;
+  padding: 20px 10px;
+  font-size: 1.4em;
   text-align: center;
+  position: relative;
+}
+/* line 51, style.scss */
+nav .main-nav li [class^="icon-"]:before {
+  position: absolute;
+  left: 20%;
+  font-family: 'icomoon';
+  top: 32%;
 }
 
-/* line 31, style.scss */
+/* line 61, style.scss */
+.move1 .move {
+  height: 3px;
+  left: 100%;
+}
+
+/* line 66, style.scss */
+.move2 .move {
+  height: 3px;
+  left: 200%;
+}
+
+/* line 71, style.scss */
+.move {
+  left: 0;
+}
+
+/* line 74, style.scss */
+li:hover a {
+  color: #06b889;
+}
+
+/* line 81, style.scss */
+.title {
+  text-align: center;
+  margin: 60px 0;
+  color: #fff;
+  font-size: 4.5em;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+/* line 90, style.scss */
 .section1 p {
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
-/* line 39, style.scss */
-.section2 li:first-child {
-  margin-right: 20px;
-}
-/* line 42, style.scss */
+/* line 99, style.scss */
 .section2 li {
   background-color: #fff;
   overflow: hidden;
   width: 500px;
   padding: 0;
 }
-/* line 47, style.scss */
+/* line 104, style.scss */
 .section2 li a {
   display: block;
   position: relative;
 }
-/* line 50, style.scss */
+/* line 107, style.scss */
 .section2 li a p, .section2 li a div {
   position: absolute;
   padding: 0;
   margin: 0;
   transition: all .3s ease;
 }
-/* line 56, style.scss */
+/* line 113, style.scss */
 .section2 li a p {
   z-index: 200;
   text-align: center;
   width: 100%;
   font-size: 1.6em;
   font-weight: 500;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poiret One', cursive;
   bottom: -15%;
-  color: #f1f1f1;
+  font-weight: bold;
+  color: #ededed;
 }
-/* line 67, style.scss */
+/* line 125, style.scss */
 .section2 li a div:nth-child(3) {
   height: 1%;
   z-index: 200;
   width: 80%;
   left: 10%;
-  background-color: #f1f1f1;
+  background-color: #ededed;
   top: -2%;
 }
-/* line 75, style.scss */
+/* line 133, style.scss */
 .section2 li a div:last-child {
   height: 100%;
   top: 0;
   z-index: 150;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.19);
+  background-color: rgba(0, 0, 0, 0.39);
   opacity: 0;
 }
-/* line 89, style.scss */
+/* line 148, style.scss */
 .section2 li:hover p {
   bottom: 50%;
 }
-/* line 92, style.scss */
+/* line 151, style.scss */
 .section2 li:hover div:nth-child(3) {
   top: 60%;
 }
-/* line 95, style.scss */
+/* line 154, style.scss */
 .section2 li:hover div:last-child {
   opacity: 1;
 }
 
-/* line 104, style.scss */
+/* line 163, style.scss */
 footer {
+  margin-top: 20px;
   height: 15%;
   border-top: 1px solid rgba(0, 0, 0, 0.14);
   text-align: center;
   font-weight: 300;
-  color: #74777B;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #fff;
   font-style: normal;
 }
-/* line 111, style.scss */
+/* line 172, style.scss */
+footer p:first-child {
+  padding: 10px 0;
+  margin: 0;
+}
+/* line 176, style.scss */
 footer p:last-child {
   font-size: .8em;
 }
