@@ -8,11 +8,18 @@ $("document").ready(function () {
 	var length = loader.getTotalLength();
 	loader.style.strokeDasharray = length + ' ' + length;
 	loader.style.strokeDashoffset = length;
-
+	window.addEventListener('scroll', noscroll);
 	$('.circle').one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
 		function (e) {
 			$('.container').removeClass('start');
 			$('.container').addClass('end');
+		setInterval(function(){
+			window.removeEventListener('scroll', noscroll);
+	},1500);
 
 		});
+
+	function noscroll() {
+		window.scrollTo(0, 0);
+	}
 });
