@@ -33,13 +33,13 @@ header{
 .load{
 	width: 100%;
 	position: absolute;
-	bottom: 45%;
+	
 	svg{
 		display: block;
 		margin: 0 auto;
 		fill:none;
-		width: 80px;
-		transform: scale(8);
+		width: 630px;
+		
 		.circlebg{
 			stroke:#ccc;
 			stroke-width:1;
@@ -57,7 +57,7 @@ header{
     opacity: 1;
     animation: animInitialHeader 1s cubic-bezier(0.7,0,0.3,1) both;
 }
- .start .load{
+ .start .load svg{
 	 animation: load-start-expand .5s ease 1.1s both;
  }
 @keyframes animInitialHeader {
@@ -86,7 +86,7 @@ header{
 .end .logo{
 	animation:logo-move-up 1s cubic-bezier(0.7,0,0.3,1) both; 
 	svg{
-		animation: svg-fx 1s linear both;
+		animation: svg-fx .8s linear both;
 	}
 }
 
@@ -114,7 +114,7 @@ header{
 }
 @keyframes svg-fx {
 	to{
-		width:250px;
+		transform: scale(.7);
 		fill:#fff;
 	}
 }
@@ -129,25 +129,30 @@ header{
 
 
 
+header{
 
+}
 
 
 
 //////////////////////////////////////////////////////////////////////////////////////
-section{
+//////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////
+.inner-container{
+	background-color: $blue;
 	display: none;
 }
 nav{
-	width: 100%;
+	
+	
 	 .main-nav{
-		display: flex;
+		 margin: 0 auto;
 		width:60%;
-		border: 1px solid yellow;
+		 
 		li{
-			width:33.333333333333333%;
-			border: 1px solid red;
+			width: 33.3333333333%;
+			padding: 0;
 			a{
-				border: 1px solid blue;
 				display: block;
 				padding:10px;
 				text-align: center;
@@ -155,3 +160,18 @@ nav{
 		}
 	}
 }
+//////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////
+footer{
+	height:15%;
+	border-top: 1px solid rgba(0, 0, 0, 0.14);
+	font-family: 'Josefin Sans', sans-serif;
+	text-align:center;
+	font-weight:300;
+	color:#74777B;
+	font-style:normal;
+	p:last-child{
+		font-size:.8em;
+		}
+	}
