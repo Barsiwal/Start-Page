@@ -110,10 +110,9 @@ li:hover a{
 	li{
 		margin:0 10px;
 		border:1px solid $menu-color;
-		background-color: #fff;	
 		overflow: hidden;
 		width:500px;
-		padding:0;
+		padding:10px;
 		a{
 			display: block;
 			position:relative;
@@ -140,6 +139,7 @@ li:hover a{
 				z-index: 200;
 				width:80%;
 				left:10%;
+				opacity: 0;
 				background-color: $work-color;
 				top:-2%;
 			}
@@ -163,6 +163,7 @@ li:hover a{
 		}
 		div:nth-child(3){
 			top:60%;
+			opacity: 1;
 		}
 		div:last-child{
 			opacity: 1;

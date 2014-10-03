@@ -1924,7 +1924,7 @@ header {
     width: 25%;
     display: block;
     margin: 0 auto;
-    fill: #fa5d87; }
+    fill: #fa5d5d; }
 
 .load {
   width: 100%;
@@ -1938,7 +1938,7 @@ header {
       stroke: #ccc;
       stroke-width: 1; }
     .load svg .circle {
-      stroke: #f81354;
+      stroke: #f81313;
       stroke-width: 1; }
 
 .start .logo, .start .load {
@@ -1973,7 +1973,7 @@ header {
 .end .load svg {
   animation: remove-load 1s ease both; }
   .end .load svg .circlebg {
-    stroke: #f81354; }
+    stroke: #f81313; }
 
 .end header {
   animation: height-collapse 1s ease both; }
@@ -2052,7 +2052,7 @@ header {
   content: "\e605"; }
 
 .inner-container {
-  background: repeating-linear-gradient(-45deg, #fa5d87, #fa5d87 20px, #f81354 20px, #f81354 40px);
+  background: repeating-linear-gradient(-45deg, #fa5d5d, #fa5d5d 20px, #f81313 20px, #f81313 40px);
   background-size: cover; }
 
 section {
@@ -2075,7 +2075,7 @@ nav {
         height: 3px;
         width: 100%;
         bottom: 0;
-        background-color: #06b883; }
+        background-color: #06b8b5; }
       nav .main-nav li a {
         cursor: pointer;
         font-family: 'Open Sans Condensed', sans-serif;
@@ -2102,7 +2102,7 @@ nav {
   left: 0; }
 
 li:hover a {
-  color: #06b883; }
+  color: #06b8b5; }
 
 .title {
   border-top: 1px solid rgba(0, 0, 0, 0.14);
@@ -2127,11 +2127,10 @@ li:hover a {
   margin-top: 90px; }
 .section2 li {
   margin: 0 10px;
-  border: 1px solid #06b883;
-  background-color: #fff;
+  border: 1px solid #06b8b5;
   overflow: hidden;
   width: 500px;
-  padding: 0; }
+  padding: 10px; }
   .section2 li a {
     display: block;
     position: relative; }
@@ -2155,6 +2154,7 @@ li:hover a {
       z-index: 200;
       width: 80%;
       left: 10%;
+      opacity: 0;
       background-color: #ededed;
       top: -2%; }
     .section2 li a div:last-child {
@@ -2167,7 +2167,8 @@ li:hover a {
 .section2 li:hover p {
   bottom: 50%; }
 .section2 li:hover div:nth-child(3) {
-  top: 60%; }
+  top: 60%;
+  opacity: 1; }
 .section2 li:hover div:last-child {
   opacity: 1; }
 
