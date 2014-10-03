@@ -7,12 +7,12 @@ $menu-color:darken(complement($blue),30%);
 //////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////
 .inner-container{
-	background: $blue;
+	background: repeating-linear-gradient(-45deg, $blue, $blue 20px, $blue2 20px, $blue2 40px);  ;
 	background-size:cover;
 }
 section{
 		background-color: $bg;
-	border-radius: 10px;
+	
 }
 nav{
 	
@@ -30,7 +30,7 @@ nav{
 			width: 33.3333333333%;
 			padding: 0;
 			div{
-				transition:all .3s ease-out;
+				transition:all .4s cubic-bezier(.46,-0.02,.95,.64);
 			 position: absolute;
 			 height:3px;
 			 width:100%;
@@ -79,14 +79,20 @@ li:hover a{
 //////////////////////////////////////////////////////////////////////////////////////
 
 .title{
+	border-top: 1px solid hsla(0, 0%, 0%, 0.14);
 	text-align: center;
-	margin:60px 0;
+	padding:60px 0;
 	color:#fff;
+	margin-bottom: 90px;
 	font-size: 4.5em;
 	font-family: 'Shadows Into Light', cursive;
 }
 .section1{
-
+	display: flex;
+	justify-content: center;
+	div{
+		width: 45%;
+	}
 	p{
 		font-family: 'Open Sans Condensed', sans-serif;
 	}
@@ -95,8 +101,15 @@ li:hover a{
 //////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////
 .section2{
-
+	ul{
+		display: flex;
+		justify-content: center;
+		margin-top:90px;
+	}
+	
 	li{
+		margin:0 10px;
+		border:1px solid $menu-color;
 		background-color: #fff;	
 		overflow: hidden;
 		width:500px;
@@ -160,8 +173,43 @@ li:hover a{
 //////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////
+section{
+	position: relative;
+	height:569px;
+	overflow: hidden;
+}
+.section1,.section2,.section3{
+	min-width:100%;
+}
+.slide{
+	position: absolute;
+	top:0;
+	transition:all .4s cubic-bezier(.46,-0.02,.95,.64);
+	display: flex;
+	width: 100%;
+	div{
+		float: left;
+	}
+}
+section::after,.slide::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.move1 .slide{
+	left:-100%;
+}
+.move2 .slide{
+	left:-200%;
+}
+.slide{
+	left:0;
+	height: 100%;
+}
+//////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////
 footer{
-	margin-top:20px;
 	height:15%;
 	border-top: 1px solid rgba(0, 0, 0, 0.14);
 	text-align:center;
